@@ -1,1 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+
+.apexcharts-series.apexcharts-radial-series path {
+    stroke: #484848 !important;
+    stroke-linecap: round !important;
+}
