@@ -1,0 +1,12 @@
+<form [formGroup]="dataForm" (ngSubmit)="save(dataForm, f)" #f="ngForm">
+    <div class="color-wheel">
+        <label>Pick Color<span class="mendatory">*</span></label>
+        <div>
+            <div id="picker"></div>
+            <input formControlName="color_code" type="text" class="form-control mt-3 color-input" placeholder="Enter Color" [ngClass]="{'form-submitted': f.submitted}" />
+            <div *ngIf="ui.checkErrors(g.color_code, f)" class="errors">
+                <p *ngIf="g.color_code.errors.required">Color is required</p>
+            </div>
+        </div>
+    </div>
+</form>

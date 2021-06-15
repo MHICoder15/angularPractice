@@ -6,11 +6,16 @@ import { Component, OnInit } from '@angular/core'
     styleUrls: ['./parent.component.css']
 })
 export class ParentComponent implements OnInit {
-    parentMsg: string = 'I am Parent Module'
+    title = 'Angular App'
+    myInputMessage: string = 'I am the parent comppnent'
 
     constructor() { }
 
     ngOnInit() {
+    }
+
+    GetChildData(data) {
+        console.log('Child Msg:', data)
     }
 
 }

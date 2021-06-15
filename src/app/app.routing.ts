@@ -13,6 +13,10 @@ const routes: Routes = [
         loadChildren: () => import('./apex-charts/apex-charts.module').then(mod => mod.ApexChartsModule)
     },
     {
+        path: 'color-wheel',
+        loadChildren: () => import('./color-wheel-iro/color-wheel-iro.module').then(mod => mod.ColorWheelIroModule)
+    },
+    {
         path: 'parent',
         component: ParentComponent
     },

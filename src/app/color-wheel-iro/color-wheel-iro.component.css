@@ -1,0 +1,12 @@
+.color-wheel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.errors p {
+    color: red;
+}
+.color-input {
+    width: 100%;
+}

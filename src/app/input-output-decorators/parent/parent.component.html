@@ -1,6 +1,18 @@
-<div class="main-parent">
+<!-- <div class="main-parent">
     <h1>I am Parent</h1>
+</div> -->
+<!-- <div>
+    <app-child [myinputMsg]="myInputMessage"></app-child>
+</div> -->
+<!-- <div>
+    <app-child [myinputMsg]="myInputMessage" (myOutput)="GetChildData($event)"></app-child>
+</div> -->
+
+<div style="text-align: center;">
+    <h1>Welcome to {{title}}</h1>
+    <h2>I am Parent</h2>
 </div>
 <div>
-    <app-child [myInputMsg]="parentMsg"></app-child>
+    <!-- <app-child [myinputMsg]="myInputMessage"></app-child> -->
+    <app-child [myinputMsg]="myInputMessage" (myOutput)="GetChildData($event)"></app-child>
 </div>
