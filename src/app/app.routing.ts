@@ -23,6 +23,10 @@ const routes: Routes = [
     {
         path: 'child',
         component: ChildComponent
+    },
+    {
+        path: 'google-map',
+        loadChildren: () => import('./google-map/google-map.module').then(mod => mod.GoogleMapModule)
     }
 ]
 

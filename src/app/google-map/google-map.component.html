@@ -1,0 +1,30 @@
+<!-- <agm-map></agm-map> -->
+<!-- <agm-map [latitude]="location.latitude" [longitude]="location.longitude">
+    <agm-marker [latitude]="location.marker.lat" [longitude]="location.marker.lng"></agm-marker>
+</agm-map> -->
+<!-- <agm-map [latitude]="location.latitude" [longitude]="location.longitude" [mapTypeId]="location.mapType"></agm-map> -->
+<!-- <agm-map [latitude]="location.latitude" [longitude]="location.longitude" [mapTypeId]="location.mapType" [zoom]="location.zoom"></agm-map> -->
+
+<!-- <agm-map [latitude]="location.latitude" [longitude]="location.longitude" [zoom]="location.zoom" (mapClick)="addMarker($event.coords.lat, $event.coords.lng)">
+    <agm-marker *ngFor="let marker of location.markers" [latitude]="marker.lat" [longitude]="marker.lng"></agm-marker>
+</agm-map> -->
+
+<!-- <agm-map [latitude]="location.latitude" [longitude]="location.longitude" [zoom]="location.zoom" (mapClick)="addMarker($event.coords.lat, $event.coords.lng)">
+    <agm-marker *ngFor="let marker of location.markers" [latitude]="marker.lat" [longitude]="marker.lng" (markerClick)="selectMarker($event)"></agm-marker>
+</agm-map>
+<div>
+    Selected Marker is: Longitude {{selectedMarker.lat}} Latitude {{selectedMarker.lng}}
+</div> -->
+
+<!-- <agm-map [latitude]="location.latitude" [longitude]="location.longitude" [zoom]="location.zoom">
+    <agm-marker [latitude]="location.marker.lat" [longitude]="location.marker.lng"></agm-marker>
+</agm-map> -->
+
+<agm-map [latitude]="location.latitude" [longitude]="location.longitude" [zoom]="location.zoom">
+    <agm-marker [latitude]="location.marker.lat" [longitude]="location.marker.lng"></agm-marker>
+    <agm-direction [origin]="origin" [destination]="destination"></agm-direction>
+</agm-map>
+
+<div>
+    Distance: {{distance}}
+</div>

@@ -12,7 +12,12 @@
     <h1>Welcome to {{title}}</h1>
     <h2>I am Parent</h2>
 </div>
-<div>
-    <!-- <app-child [myinputMsg]="myInputMessage"></app-child> -->
+<!-- <app-child [myinputMsg]="myInputMessage"></app-child> -->
+<!-- <div>
     <app-child [myinputMsg]="myInputMessage" (myOutput)="GetChildData($event)"></app-child>
-</div>
+</div> -->
+
+<app-child (newItemEvent)='addItem($event)'> </app-child>
+<ul>
+    <li *ngFor='let item of items'>{{item}}</li>
+</ul>

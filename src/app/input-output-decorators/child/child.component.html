@@ -7,4 +7,13 @@
 <div>
     <button (click)="sendValues"> Send Data </button>
 </div> -->
-<button (click)="sendValues"> Send Data </button>
+<!-- <button (click)="sendValues"> Send Data </button> -->
+
+<div style="text-align: center;">
+    <h1>Welcome to {{title}}</h1>
+    <h2>I am Child</h2>
+</div>
+<div>
+    <label>Add an item: <input #newItem></label>
+    <button (click)='addNewItem(newItem.value)'>Add to parent's list</button>
+</div>
