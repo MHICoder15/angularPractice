@@ -27,6 +27,10 @@ const routes: Routes = [
     {
         path: 'google-map',
         loadChildren: () => import('./google-map/google-map.module').then(mod => mod.GoogleMapModule)
+    },
+    {
+        path: 'practice',
+        loadChildren: () => import('./practice/practice.module').then(mod => mod.PracticeModule)
     }
 ]
 
