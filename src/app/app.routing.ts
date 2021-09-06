@@ -31,6 +31,10 @@ const routes: Routes = [
     {
         path: 'practice',
         loadChildren: () => import('./practice/practice.module').then(mod => mod.PracticeModule)
+    },
+    {
+        path: 'form-validation',
+        loadChildren: () => import('./form-validation/form-validation.module').then(mod => mod.FormValidationModule)
     }
 ]
 
